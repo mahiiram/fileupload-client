@@ -6,7 +6,7 @@ function App() {
     const handleSubmit = (e) =>{
         const formdata = new FormData();
         formdata.append('file',file)
-         axios.post(`http://localhost:5000/api/upload`,formdata)
+         axios.post(`https://fileupload-87jg.onrender.com/api/upload`,formdata)
         .then(res=>console.log(res))
         .catch(err=>console.log(err))
     }
